@@ -14,56 +14,55 @@
             background-image: url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D');
             background-size: cover;
             background-position: center;
-            margin: 0; /* Remove o margin padrão */
+            margin: 0;
         }
         .perfil {
-            position: relative; /* Para posicionar o quadrado de fundo */
+            position: relative;
             display: flex;
             border: 2px solid #ccc;
             border-radius: 10px;
-            padding: 160px 40px; /* Aumente o padding vertical para muito mais altura */
+            padding: 40px; 
             background: white;
             box-shadow: 0 4px 0px rgba(0, 0, 0, 0.1);
-            opacity: 0.9; /* Torna o fundo um pouco transparente */
-            width: 80%; /* Ajuste a largura conforme necessário */
-            max-width: 700px; /* Aumente a largura máxima se necessário */
-            margin: 20px 0; /* Adicione margem em cima e embaixo */
+            opacity: 0.9;
+            width: 80%;
+            max-width: 700px;
+            margin: 20px 0;
         }
         .perfil::before {
-            content: ""; /* Cria um pseudo-elemento */
-            position: absolute; /* Posiciona o quadrado atrás */
-            top: -30px; /* Aumenta a posição em cima */
-            left: -30px; /* Aumenta a posição à esquerda */
-            right: -30px; /* Aumenta a posição à direita */
-            bottom: -30px; /* Aumenta a posição embaixo */
-            background: rgba(255, 255, 255, 0.733); /* Fundo branco transparente */
-            border-radius: 12px; /* Bordas arredondadas */
-            z-index: -1; /* Coloca atrás do quadrado branco */
+            content: "";
+            position: absolute;
+            top: -30px;
+            left: -30px;
+            right: -30px;
+            bottom: -30px;
+            background: rgba(255, 255, 255, 0.733);
+            border-radius: 12px;
+            z-index: -1;
         }
         .perfil-title {
-            text-align: center; /* Centraliza o título */
-            margin-bottom: 20px; /* Espaço entre o título e o conteúdo */
-            font-size: 1.5em; /* Tamanho da fonte */
-            color: #333; /* Cor do texto */
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            color: #333;
         }
         .foto-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; 
-    margin-right: 20px;
-    border: 2px solid #ccc; /* Adiciona um contorno */
-    border-radius: 8px; /* Arredonda as bordas do contorno */
-    padding: 10px; /* Adiciona um pouco de espaço interno */
-    background: white; /* Cor de fundo para o contorno */
-}
-
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center; 
+            margin-right: 20px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            background: white;
+        }
         .foto {
             border: 3px solid #ccc;
             width: 120px;
             height: 120px;
             background: #e0e0e0;
-            margin-bottom: 10px; /* Espaço entre as fotos */
+            margin-bottom: 10px;
         }
         .info {
             display: flex;
@@ -73,10 +72,7 @@
             border: 2px solid #ccc;
             border-radius: 8px;
             padding: 15px;
-            margin-bottom: 10px;
-            width: 450px; /* ajuste o valor conforme necessário */
-
-            
+            margin-top: 10px;
         }
         .item {
             border: 1px solid #ccc;
@@ -97,34 +93,28 @@
             background-color: #975affb7; 
             color: white; 
             border-radius: 15px;
-            font-size: 0.9em; /* Tamanho da fonte menor */
-            font-style: italic; /* Texto em itálico */
-            padding: 10px; /* Adiciona um pouco de espaço interno */
-            width: 470px; /* Ajuste a largura conforme necessário */
-            text-align: center; /* Centraliza o texto (opcional) */
+            font-size: 0.9em;
+            font-style: italic;
+            padding: 10px;
+            margin-bottom: 15px; /* Espaçamento entre a caixa de texto e os dados */
         }
     </style>
 </head>
 <body>
     <div class="perfil">
         <div class="foto-container">
-            <h2>Perfil de Usuário</h2>
             <div class="foto"></div>
             <div class="admin">Admin</div>
         </div>
         <div class="info">
+            <div class="textbox">
+                <h2>Olá Luciano! Seja bem-vindo ao seu perfil, sinta-se à vontade para personalizar sua experiência. Se precisar de ajuda ou tiver alguma dúvida, acesse a página de suporte para poder ajudá-lo.</h2>
+            </div>
             <div class="dados">
                 <div class="item"><h2>Nome</h2></div>
                 <div class="item"><p>Email: usuario@example.com</p></div>
                 <div class="item"><p>Senha: ********</p></div>
             </div>
-        <div class="textobox">
-                <div class="textbox">
-                    <div class="item"><h2>Olá  Luciano! Seja bem-vindo ao seu perfil,
-                        sinta-se à vontade para personalizar sua 
-                        experiência. Se precisar de ajuda ou tiver alguma
-                         dúvida, acesse a página de suporte para poder ajuda-lo.</h2></div>
-                </div>
         </div>
     </div>
 </body>
